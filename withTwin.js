@@ -27,10 +27,7 @@ module.exports = function withTwin(nextConfig) {
               plugins: [
                 require.resolve('babel-plugin-macros'),
                 require.resolve('@emotion/babel-plugin'),
-                [
-                  require.resolve('@babel/plugin-syntax-typescript'),
-                  { isTSX: true },
-                ],
+                [require.resolve('@babel/plugin-syntax-typescript'), { isTSX: true }],
               ],
             },
           },

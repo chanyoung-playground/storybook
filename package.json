@@ -8,7 +8,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --cache --write .",
+    "lint": "eslint --cache ."
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
