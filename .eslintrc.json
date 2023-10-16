@@ -3,7 +3,7 @@
     "browser": true,
     "node": true
   },
-  "extends": "next/core-web-vitals",
+  "extends": ["next/core-web-vitals", "plugin:storybook/recommended"],
   "settings": {
     "next": {
       "rootDir": "packages/*/"
@@ -14,6 +14,11 @@
     "@next/next/no-page-custom-font": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-var-requires": 0,
-    "react/no-unknown-property": ["error", { "ignore": ["css", "tw"] }]
+    "react/no-unknown-property": [
+      "error",
+      {
+        "ignore": ["css", "tw"]
+      }
+    ]
   }
 }
